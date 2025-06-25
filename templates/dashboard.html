@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | SecureVault Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome, {{ username }}!</h2>
+        <p>This is your secure dashboard. Manage your credentials with confidence.</p>
+
+        <div class="button-group">
+            <a href="{{ url_for('auth.vault') }}" class="btn">Open Vault</a>
+            <a href="{{ url_for('auth.logout') }}" class="btn logout-btn">Logout</a>
+
+        </div>
+    </div>
+</body>
+</html>
