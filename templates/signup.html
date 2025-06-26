@@ -8,8 +8,12 @@
 <body>
     <div class="auth-container">
         <div class="card">
-            <h1>SecureVault Pro</h1>
-            <p>Securely manage your credentials</p>
+           
+            <h3>SecureVault Pro</h3>
+            <p class="tagline">Secure your credentials hassle - free!</p>
+            <hr class="section-divider">
+            <h4>One Step to Secure Everything</h4>
+            
             <form action="{{ url_for('auth.signup') }}" method="POST">
                 <label>Username</label>
                 <input type="text" name="username" placeholder="Choose a username" required>
