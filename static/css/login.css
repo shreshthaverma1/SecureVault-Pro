@@ -7,25 +7,75 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+
+    background-image: url('Desktop\ -\ 2.png');
+    background-size: cover;                
+    background-position: center;          
+    background-repeat: no-repeat;         
 }
 
 .auth-container {
     background-color: #181818;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    padding: 50px;           
-    width: 700px;            
+    box-shadow: 0 0 20px #010d22;
+    padding: 50px; 
+    width: 700px;
     color: #fff;
 }
 
 .card h3 {
-    margin-bottom: 5px;
+    margin-bottom: 0px;   
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.card h6 {
+    margin-top: 3px;      
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #7289b1;
+    font-weight: 120;
+    
+}
+
+.section-divider {
+    border: none;
+    border-top: 2px solid #5559618a;
+    width: 90%;
+    margin-top: 40px; /* space above and below, centered */
+}
+
+.card h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
     font-size: 40px;
     text-align: center;
+
+    background: linear-gradient(270deg, #0B64FF, #9f13ce, #0B64FF);
+    background-size: 300% 100%;  
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    animation: gradientTextMove 4s linear infinite;
+}
+
+@keyframes gradientTextMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .card p {
-    font-size: 18px;
+    font-size: 20px;
     color: #bbb;
     text-align: center;
     margin-bottom: 10px;
@@ -33,8 +83,9 @@ body {
 
 
 .card a {
-    color: #90caf9;
+    color: #9f13ce;
     text-decoration: none;
+    
 }
 
 form {
@@ -64,18 +115,18 @@ input::placeholder {
 }
 
 .main-btn {
-    background-color: #2f03b5;
+    background-color: #0B64FF;
     border: none;
     padding: 12px;
     border-radius: 8px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
     cursor: pointer;
 }
 
 .main-btn:hover {
-    background-color: #4918de
+    background-color: #2874f9
 }
 
 .secondary-btn {
@@ -84,8 +135,8 @@ input::placeholder {
     padding: 10px 20px;
     
     border-radius: 8px;
-    border: 2px solid #2e6577;
-    color: #2e6577;
+    border: 2px solid #9f13ce;
+    color: #9f13ce;
     text-decoration: none;
     font-weight: bold;
     background: transparent;
@@ -96,8 +147,8 @@ input::placeholder {
 
 .secondary-btn:hover {
     font-size: 20px;
-    background-color: #3b8097;
-    color: #fff;
+    background-color: #330243;
+    color: #ffffff;
 
 }
 
