@@ -10,7 +10,11 @@
 <body>
     <div class="auth-container">
         <div class="card">
-            <h3>Welcome Back</h3>
+            
+            <h3>SecureVault Pro</h3>
+            <p class="tagline">Secure your credentials hassle - free!</p>
+            <hr class="section-divider">
+            <h4>Welcome Back!</h4>
 
             <form action="{{ url_for('auth.login') }}" method="POST">
                 <label>Email address</label>
@@ -25,10 +29,6 @@
                     <p>Don't have an account?</p>
                     <a href="{{ url_for('auth.signup') }}" class="secondary-btn">Sign Up</a>
                 </div>
-
-
-
-
             </form>
         </div>
     </div>
