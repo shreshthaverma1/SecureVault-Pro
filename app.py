@@ -1,6 +1,6 @@
 from flask import Flask, render_template, session, redirect, url_for
 from config import Config
-from routes.auth import auth_bp
+from auth import auth_bp
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 app.config.from_object(Config)
